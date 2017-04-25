@@ -1,0 +1,9 @@
+- key: pm2
+  title: "PM2"
+  description: >
+    PM2 status metrics collected from PM2 instances.
+  fields:
+    - name: pm2
+      type: group
+      description: >
+      fields:

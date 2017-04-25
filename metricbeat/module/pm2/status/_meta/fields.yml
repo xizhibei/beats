@@ -1,0 +1,29 @@
+- name: status
+  type: group
+  description: >
+    status
+  fields:
+    - name: pid
+      type: long
+    - name: name
+      type: keyword
+    - name: pm_id
+      type: integer
+    - name: memory
+      type: integer
+    - name: cpu
+      type: integer
+    - name: status
+      type: keyword
+    - name: pm_uptime
+      type: long
+    - name: restarts
+      type: integer
+    - name: unstable_restarts
+      type: integer
+    - name: node_version
+      type: keyword
+    - name: exec_mode
+      type: keyword
+    - name: hostname
+      type: keyword

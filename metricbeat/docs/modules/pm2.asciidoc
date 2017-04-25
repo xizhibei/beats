@@ -1,0 +1,41 @@
+////
+This file is generated! See scripts/docs_collector.py
+////
+
+[[metricbeat-module-pm2]]
+== PM2 Module
+
+This module periodically fetches metrics from the PM2 (https://github.com/Unitech/pm2).
+
+=== Pre requirements
+Be sure to start the pm2-http-interface by issuing the command: `pm2 web`
+
+
+[float]
+=== Example Configuration
+
+The PM2 module supports the standard configuration options that are described
+in <<configuration-metricbeat>>. Here is an example configuration:
+
+[source,yaml]
+----
+metricbeat.modules:
+- module: pm2
+  metricsets: ["status"]
+  enabled: true
+  period: 10s
+  hosts: ["localhost:9615"]
+  includeNames: []
+  excludeNames: ["pm2-http-interface"]
+
+----
+
+[float]
+=== Metricsets
+
+The following metricsets are available:
+
+* <<metricbeat-metricset-pm2-status,status>>
+
+include::pm2/status.asciidoc[]
+

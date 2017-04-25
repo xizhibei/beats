@@ -1,0 +1,30 @@
+{
+    "@timestamp": "2016-05-23T08:05:34.853Z",
+    "beat": {
+        "hostname": "beathost",
+        "name": "beathost"
+    },
+    "metricset": {
+        "host": "localhost:9615",
+        "module": "pm2",
+        "name": "status",
+        "rtt": 44269
+    },
+    "pm2": {
+        "status": {
+            "cpu": 0,
+            "exec_mode": "fork_mode",
+            "hostname": "beathost",
+            "memory": 29044736,
+            "name": "pm2-http-interface",
+            "node_version": "6.10.2",
+            "pid": 28680,
+            "pm_id": 0,
+            "pm_uptime": 1491534980125,
+            "restarts": 0,
+            "status": "online",
+            "unstable_restarts": 0
+        }
+    },
+    "type": "metricsets"
+}
