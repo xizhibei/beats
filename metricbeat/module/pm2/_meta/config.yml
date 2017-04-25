@@ -1,0 +1,8 @@
+- module: pm2
+  metricsets: ["status"]
+  enabled: true
+  period: 10s
+  hosts: ["localhost:9615"]
+  include_names: []
+  exclude_names: ["pm2-http-interface"]
+

@@ -32,6 +32,7 @@ grouped in the following categories:
 * <<exported-fields-mysql>>
 * <<exported-fields-nginx>>
 * <<exported-fields-php_fpm>>
+* <<exported-fields-pm2>>
 * <<exported-fields-postgresql>>
 * <<exported-fields-prometheus>>
 * <<exported-fields-redis>>
@@ -5843,6 +5844,86 @@ type: long
 
 The number of times a request execution time has exceeded `request_slowlog_timeout`.
 
+
+[[exported-fields-pm2]]
+== PM2 Fields
+
+PM2 status metrics collected from PM2 instances.
+
+
+
+[float]
+== pm2 Fields
+
+
+
+
+[float]
+== status Fields
+
+status
+
+
+
+[float]
+=== pm2.status.pid
+
+type: long
+
+[float]
+=== pm2.status.name
+
+type: keyword
+
+[float]
+=== pm2.status.pm_id
+
+type: integer
+
+[float]
+=== pm2.status.memory
+
+type: integer
+
+[float]
+=== pm2.status.cpu
+
+type: integer
+
+[float]
+=== pm2.status.status
+
+type: keyword
+
+[float]
+=== pm2.status.pm_uptime
+
+type: long
+
+[float]
+=== pm2.status.restarts
+
+type: integer
+
+[float]
+=== pm2.status.unstable_restarts
+
+type: integer
+
+[float]
+=== pm2.status.node_version
+
+type: keyword
+
+[float]
+=== pm2.status.exec_mode
+
+type: keyword
+
+[float]
+=== pm2.status.hostname
+
+type: keyword
 
 [[exported-fields-postgresql]]
 == PostgreSQL Fields

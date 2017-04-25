@@ -1,0 +1,6 @@
+== PM2 Module
+
+This module periodically fetches metrics from the PM2 (https://github.com/Unitech/pm2).
+
+=== Pre requirements
+Be sure to start the pm2-http-interface by issuing the command: `pm2 web`
